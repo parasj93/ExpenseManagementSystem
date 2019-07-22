@@ -62,7 +62,7 @@ export class EditExpenseComponent implements OnInit {
   updateExpense() {
     let value = this.form.value;
     this.update = {
-      id: value.id,
+      id: this.expense$.id,
       expenseCategory: value.expenseCategory,
       itemName: value.itemName,
       amount: value.amount,

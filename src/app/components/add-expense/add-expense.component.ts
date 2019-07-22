@@ -34,7 +34,7 @@ export class AddExpenseComponent {
   login() {
     let value = this.form.value;
     this.addexpense = {
-      id: 10,
+      id: Math.floor(Math.random() * Math.floor(100)),
       expenseCategory: value.expenseCategory,
       itemName: value.itemName,
       amount: value.amount,
@@ -46,7 +46,7 @@ export class AddExpenseComponent {
   }
 
   openAddExpenseAlert(message: string, action) {
-    let snackBar = this.matSnackBar.open(message, action, {duration: 5000});
+    let snackBar = this.matSnackBar.open(message, action, {duration: 2000});
     snackBar.afterDismissed().subscribe(() => console.log('The expense Added'));
     snackBar
       .onAction()

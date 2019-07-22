@@ -15,7 +15,7 @@ const featureReducer = createReducer(
     ...state,
     selectedExpenseId: id,
   })),
-  on(featureAction.expenseSaved, (state, {expense: expense}) => {
+  on(featureAction.expenseSaved, (state: State, {expense: expense}) => {
     return featureAdapter.updateOne(expense, {...state});
   })
 );
