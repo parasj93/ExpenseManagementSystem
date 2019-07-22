@@ -1,38 +1,36 @@
 .sidenavWrapper {
-    height: 100%;
-  }
-  
-  .sidenavContainer {
-    width: 160px;
-  }
-  
-  .navigationLink {
-    display: block;
-    padding: 20px 15px;
-    border-bottom: 1px solid;
-    box-shadow: 0 2px 2px 0;
-    text-decoration: none;
-  }
-  
-  .headerWrapper {
-      position: relative;
-      background-color: #ffffff;
-  }
-  
-  .headerHeading {
-    padding: 25px;
-    text-align: center;
-    font-size: 30px
-  }
-  
-  .toggleButton {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  
-  .activeLink{
-      font-weight: 900;
-  }
-  
+  height: 100%;
+}
+
+.sidenavContainer {
+  width: 160px;
+}
+
+.navigationLink {
+  display: block;
+  padding: 20px 15px;
+  border-bottom: 1px solid;
+  box-shadow: 0 2px 2px 0;
+  text-decoration: none;
+}
+
+.headerWrapper {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.headerHeading {
+  padding: 25px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.toggleButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.activeLink {
+  font-weight: 900;
+}

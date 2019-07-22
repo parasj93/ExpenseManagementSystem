@@ -1,8 +1,13 @@
 import {Component, OnInit} from '@angular/core';
-import {Expense} from 'src/app/models';
 import {Observable} from 'rxjs';
 import {Store, select} from '@ngrx/store';
-import {RootStoreState, ExpenseStoreSelector} from 'src/app/root-store';
+
+import {
+  RootStoreState,
+  ExpenseStoreSelector,
+  ExpenseStoreActions,
+} from 'src/app/root-store';
+import {Expense} from 'src/app/models';
 
 @Component({
   selector: 'app-expenses',
@@ -23,5 +28,9 @@ export class ExpensesComponent implements OnInit {
     this.isLoading$ = this.store.pipe(
       select(ExpenseStoreSelector.selectExpenseIsLoading)
     );
+  }
+
+  onSelect(expense: Expense) {
+    this.store.dispatch(ExpenseStoreActions.selectExpense({id: expense.id}));
   }
 }

@@ -1,30 +1,54 @@
 {
 	"type": "success",
-	"value": [{
+	"value": [
+		{
 			"id": 1,
-			"Grocery": "Grocery",
-            "itemname": "bread",
-            "date": "24.12.2019"
-		}, {
-			"id": 543,
-			"Grocery": "Chuck Norris's programs can pass the Turing Test by staring at the interrogator.",
-            "itemname": "bread",
-            "date": "24.12.2019"
-		}, {
-			"id": 513,
-			"Grocery": "Chuck Norris does not code in cycles, he codes in strikes.",
-            "itemname": "bread",
-            "date": "24.12.2019"
-		}, {
-			"id": 463,
-			"Grocery": "Chuck Norris doesn't use web standards as the web will conform to him.",
-            "itemname": "bread",
-            "date": "24.12.2019"
-		}, {
-			"id": 486,
-			"Grocery": "Chuck Norris solved the Travelling Salesman problem in O(1) time. Here's the pseudo-code: Break salesman into N pieces. Kick each piece to a different city.",
-            "itemname": "bread",
-            "date": "24.12.2019"
+			"expenseCategory": "Grocery",
+			"itemName": "bread",
+			"amount": 50,
+			"expenseDate": "Wed Jul 17 2019 00:00:00"
+		},
+		{
+			"id": 2,
+			"expenseCategory": "Bills",
+			"itemName": "Credit Card Bill",
+			"amount": 50,
+			"expenseDate": "Wed Jul 17 2019 00:00:00"
+		},
+		{
+			"id": 3,
+			"expenseCategory": "Rent",
+			"itemName": "Home Rent",
+			"amount": 50,
+			"expenseDate": "Wed Jul 17 2019 00:00:00"
+		},
+		{
+			"id": 4,
+			"expenseCategory": "Insurance",
+			"itemName": "Car Insurance",
+			"amount": 50,
+			"expenseDate": "Wed Jul 17 2019 00:00:00"
+		},
+		{
+			"id": 5,
+			"expenseCategory": "Insurance",
+			"itemName": "Bike Insurance",
+			"amount": 50,
+			"expenseDate": "Wed Jul 17 2019 00:00:00"
+		},
+		{
+			"id": 6,
+			"expenseCategory": "Recharges",
+			"itemName": "Mobile Recharge",
+			"amount": 50,
+			"expenseDate": "Wed Jul 17 2019 00:00:00"
+		},
+		{
+			"id": 7,
+			"expenseCategory": "TopUp",
+			"itemName": "Wifi Recharge",
+			"amount": 50,
+			"expenseDate": "Wed Jul 17 2019 00:00:00"
 		}
 	]
 }

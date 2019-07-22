@@ -1,6 +1,7 @@
 export interface Expense {
-    id:number,
-    Grocery:string,
-    itemname:string,
-    date:string
+  id: number;
+  expenseCategory: string;
+  itemName: string;
+  amount: number;
+  expenseDate: string;
 }

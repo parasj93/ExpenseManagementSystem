@@ -1,0 +1,57 @@
+<mat-card class="add-expense-page">
+  <mat-card-title>Add Expenses</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="form" class="add-expense-form">
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          placeholder="expenseCategory"
+          formControlName="expenseCategory"
+        />
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          placeholder="itemName"
+          formControlName="itemName"
+        />
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          type="amount"
+          placeholder="amount"
+          formControlName="amount"
+        />
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          placeholder="expenseDate"
+          formControlName="expenseDate"
+          [matDatepicker]="myDatePicker"
+        />
+        <mat-datepicker-toggle
+          matSuffix
+          [for]="myDatePicker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #myDatePicker></mat-datepicker>
+      </mat-form-field>
+
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="updateExpense()"
+        [disabled]="!form.valid"
+      >
+        Update Expense
+      </button>
+    </form>
+  </mat-card-content>
+</mat-card>

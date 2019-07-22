@@ -8,13 +8,11 @@ import {RootStoreState, ExpenseStoreActions} from './root-store';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = 'ExpenseManagementSystem';
-
   constructor(private store: Store<RootStoreState.State>) {}
 
   ngOnInit() {
     this.store.dispatch(ExpenseStoreActions.load());
   }
 
-  opened:boolean =true;
+  opened: boolean = true;
 }

@@ -1,6 +1,6 @@
-import { Expense } from './expense.interface';
+import {Expense} from './expense.interface';
 
-export interface ExpenseResult{
-    type:string,
-    value:Expense[]
+export interface ExpenseResult {
+  type: string;
+  value: Expense[];
 }

@@ -1,8 +1,34 @@
 <div *ngIf="!loading">
-  <div *ngIf="expenses">
-    <app-expense-card-item 
-    *ngFor="let expense of expenses" 
-    [expense]="expense">
-    </app-expense-card-item>
-  </div>
+  <mat-table [dataSource]="expenses">
+    <ng-container matColumnDef="Edit">
+      <mat-header-cell *matHeaderCellDef>Edit</mat-header-cell>
+      <mat-cell *matCellDef="let edit">Edit</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="expenseCategory">
+      <mat-header-cell *matHeaderCellDef>Category</mat-header-cell>
+      <mat-cell *matCellDef="let expense">{{
+        expense.expenseCategory
+      }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="itemName">
+      <mat-header-cell *matHeaderCellDef>ItemName</mat-header-cell>
+      <mat-cell *matCellDef="let expense">{{ expense.itemName }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="amount">
+      <mat-header-cell *matHeaderCellDef>Amount</mat-header-cell>
+      <mat-cell *matCellDef="let expense">{{ expense.amount }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="expenseDate">
+      <mat-header-cell *matHeaderCellDef>ExpenseDate</mat-header-cell>
+      <mat-cell *matCellDef="let expense">{{
+        expense.expenseDate | date: 'dd/MM/yyyy'
+      }}</mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row
+      (click)="selectExpense.emit(row)"
+      *matRowDef="let row; columns: displayedColumns"
+    ></mat-row>
+  </mat-table>
 </div>

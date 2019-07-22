@@ -1,4 +1,9 @@
+<button mat-button color="primary" routerLink="addExpense">
+  Add Expense
+</button>
+
 <app-expense-card-list
   [expenses]="expenses$ | async"
   [loading]="isLoading$ | async"
+  (selectExpense)="onSelect($event)"
 ></app-expense-card-list>
