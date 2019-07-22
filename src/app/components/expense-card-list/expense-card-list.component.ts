@@ -19,6 +19,7 @@ export class ExpenseCardListComponent implements OnInit {
   @Input() expenses: Expense[];
   @Input() loading: boolean;
   @Output() selectExpense = new EventEmitter<Expense>();
+  
   dataSource = new MatTableDataSource(this.expenses);
 
   @ViewChild(MatPaginator, {static: true})
@@ -37,4 +38,6 @@ export class ExpenseCardListComponent implements OnInit {
     'amount',
     'expenseDate',
   ];
+
+
 }

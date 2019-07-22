@@ -1,7 +1,7 @@
 <div class="noExpenses" *ngIf="expenses.length === 0">
   No Expenses as of now.Start Spending some money and enjoy life
 </div>
-<div *ngIf="expenses.length > 0 ">
+<div *ngIf="expenses.length > 0">
   <mat-table [dataSource]="expenses">
     <ng-container matColumnDef="Edit">
       <mat-header-cell *matHeaderCellDef>Edit</mat-header-cell>
@@ -36,4 +36,9 @@
       *matRowDef="let row; columns: displayedColumns"
     ></mat-row>
   </mat-table>
+  <mat-paginator [length]="expenses.length"
+              [pageSize]="3"
+              [pageSizeOptions]="pageSizeOptions"
+              (page)="pageEvent = $event">
+</mat-paginator>
 </div>
