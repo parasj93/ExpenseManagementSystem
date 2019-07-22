@@ -1,4 +1,7 @@
-<div *ngIf="!loading">
+<div class="noExpenses" *ngIf="expenses.length === 0">
+  No Expenses as of now.Start Spending some money and enjoy life
+</div>
+<div *ngIf="expenses.length > 0 ">
   <mat-table [dataSource]="expenses">
     <ng-container matColumnDef="Edit">
       <mat-header-cell *matHeaderCellDef>Edit</mat-header-cell>
@@ -16,7 +19,9 @@
     </ng-container>
     <ng-container matColumnDef="amount">
       <mat-header-cell *matHeaderCellDef>Amount</mat-header-cell>
-      <mat-cell *matCellDef="let expense">{{ expense.amount | currency:'INR'}}</mat-cell>
+      <mat-cell *matCellDef="let expense">{{
+        expense.amount | currency: 'INR'
+      }}</mat-cell>
     </ng-container>
     <ng-container matColumnDef="expenseDate">
       <mat-header-cell *matHeaderCellDef>ExpenseDate</mat-header-cell>

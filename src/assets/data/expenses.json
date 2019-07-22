@@ -6,49 +6,49 @@
 			"expenseCategory": "Grocery",
 			"itemName": "bread",
 			"amount": 50,
-			"expenseDate": "Wed Jul 17 2019 00:00:00"
+			"expenseDate": "Thu Jul 18 2019 00:00:00"
 		},
 		{
 			"id": 2,
 			"expenseCategory": "Bills",
 			"itemName": "Credit Card Bill",
 			"amount": 50,
-			"expenseDate": "Wed Jul 17 2019 00:00:00"
+			"expenseDate": "Thu Jul 18 2019 00:00:00"
 		},
 		{
 			"id": 3,
 			"expenseCategory": "Rent",
 			"itemName": "Home Rent",
 			"amount": 50,
-			"expenseDate": "Wed Jul 17 2019 00:00:00"
+			"expenseDate": "Thu Jul 18 2019 00:00:00"
 		},
 		{
 			"id": 4,
 			"expenseCategory": "Insurance",
 			"itemName": "Car Insurance",
 			"amount": 50,
-			"expenseDate": "Wed Jul 17 2019 00:00:00"
+			"expenseDate": "Thu Jul 18 2019 00:00:00"
 		},
 		{
 			"id": 5,
 			"expenseCategory": "Insurance",
 			"itemName": "Bike Insurance",
 			"amount": 50,
-			"expenseDate": "Wed Jul 17 2019 00:00:00"
+			"expenseDate": "Thu Jul 18 2019 00:00:00"
 		},
 		{
 			"id": 6,
 			"expenseCategory": "Recharges",
 			"itemName": "Mobile Recharge",
 			"amount": 50,
-			"expenseDate": "Wed Jul 17 2019 00:00:00"
+			"expenseDate": "Thu Jul 18 2019 00:00:00"
 		},
 		{
 			"id": 7,
 			"expenseCategory": "TopUp",
 			"itemName": "Wifi Recharge",
 			"amount": 50,
-			"expenseDate": "Wed Jul 17 2019 00:00:00"
+			"expenseDate": "Thu Jul 18 2019 00:00:00"
 		}
 	]
 }
