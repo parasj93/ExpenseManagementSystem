@@ -6,8 +6,9 @@ import {
   ViewChild,
   EventEmitter,
 } from '@angular/core';
-import {Expense} from 'src/app/models';
 import {MatPaginator, MatTableDataSource} from '@angular/material';
+
+import {Expense} from 'src/app/models';
 
 @Component({
   selector: 'app-expense-card-list',

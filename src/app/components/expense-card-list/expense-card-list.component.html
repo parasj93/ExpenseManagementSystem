@@ -16,7 +16,7 @@
     </ng-container>
     <ng-container matColumnDef="amount">
       <mat-header-cell *matHeaderCellDef>Amount</mat-header-cell>
-      <mat-cell *matCellDef="let expense">{{ expense.amount }}</mat-cell>
+      <mat-cell *matCellDef="let expense">{{ expense.amount | currency:'INR'}}</mat-cell>
     </ng-container>
     <ng-container matColumnDef="expenseDate">
       <mat-header-cell *matHeaderCellDef>ExpenseDate</mat-header-cell>
